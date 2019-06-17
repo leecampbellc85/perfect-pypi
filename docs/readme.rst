@@ -5,7 +5,7 @@ Empty example PYPI package by leecampbellc85
 Change log 
 ###########
 
-* version 0.0.1.11
+* version 0.0.1.12
     * Basic unittest for Core module
     * Documentation
 * version 0.0.1.6
