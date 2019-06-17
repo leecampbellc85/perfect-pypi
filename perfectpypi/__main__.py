@@ -1,9 +1,9 @@
-"""pypr - PyPi Project by the1bit
+"""pfpy - Perfect PyPi by leecampbellc85
 Usage:
-  pypr --version
-  pypr core --input TEXT
-  pypr core -i TEXT -o string
-  pypr core -i TEXT --output json
+  pfpy --version
+  pfpy core --input TEXT
+  pfpy core -i TEXT -o string
+  pfpy core -i TEXT --output json
 Arguments:
 Options:
   -h --help            show this help message and exit
@@ -16,8 +16,8 @@ Options:
 
 
 from docopt import docopt
-from pypiproject.version import __version__
-__author__ = "the1bit"
+from perfectpypi.version import __version__
+__author__ = "leecampbellc85"
 
 
 arguments = docopt(__doc__, version=__version__)
@@ -26,7 +26,7 @@ arguments = docopt(__doc__, version=__version__)
 if __name__ == '__main__':
   # Core module  
   if docopt(__doc__)["core"]:
-      from .core.pypiproject_core import *
+      from .core.perfectpypi_core import *
 
       # Input text
       if docopt(__doc__)["--input"]:

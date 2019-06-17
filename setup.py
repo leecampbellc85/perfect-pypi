@@ -1,4 +1,4 @@
-"""Setuptools for pypi-project.
+"""Setuptools for perfect-pypi.
 	Empty example PYPI package by leecampbellc85
 """
 
@@ -20,15 +20,15 @@ with open("docs/readme.rst", "r") as fh:
     README = fh.read()
 
 ## Version of the current package
-from pypiproject.version import __version__
+from perfectpypi.version import __version__
 
-sys.stdout.write("pypi-project: " + __version__ + '\n')
+sys.stdout.write("perfect-pypi: " + __version__ + '\n')
 
 
 # Arguments marked as "Required" below must be included for upload to PyPI.
 # Fields marked as "Optional" may be commented out.
 
-setup(name='pypi-project',
+setup(name='perfect-pypi',
 	scripts=[
         'pypr',
         'pypr.completion.sh',
@@ -36,10 +36,10 @@ setup(name='pypi-project',
     ],
 	python_requires='>=2.6, <3',
     version=__version__,
-	description='pypi-project - Empty example PYPI package by leecampbellc85',
+	description='perfect-pypi - Empty example PYPI package by leecampbellc85',
 	long_description=README,
 	long_description_content_type="text/markdown",
-	url='https://github.com/leecampbellc85/pypi-project',
+	url='https://github.com/leecampbellc85/perfect-pypi',
 	author='leecampbellc85',
 	author_email='lee.campbell.c85@hotmail.com',
 	keywords='python leecampbellc85hu',
@@ -65,8 +65,8 @@ setup(name='pypi-project',
 		'Programming Language :: Python :: 2.7'
 	],
 	  packages=[
-			'pypiproject',
-			'pypiproject.core'
+			'perfectpypi',
+			'perfectpypi.core'
 			],
 		install_requires=[
 			'docopt'

@@ -2,7 +2,7 @@
 import unittest
 
 # Import core module main file for testing
-from .pypiproject_core import *
+from .perfectpypi_core import *
 
 # Test case Class
 class TestCoreModule(unittest.TestCase):
@@ -46,6 +46,6 @@ def runUnittests():
     return unittest.TextTestRunner(verbosity=3).run(suite)
 
 # Run test if you use from __main__
-#if __name__ == 'pypiproject.core.pypiproject_core_unittest':
+#if __name__ == 'perfectpypi.core.perfectpypi_core_unittest':
     #unittest.main()
     

@@ -9,7 +9,7 @@ Change log
     * Basic unittest for Core module
     * Documentation
 * version 0.0.1.6
-    * Execute this from command-line (pypr -v)
+    * Execute this from command-line (pfpy -v)
 * version 0.0.0.1
     * Init files and directory structure
 
@@ -26,13 +26,13 @@ Basic install
 
 .. code-block::
 
-    pip install pypi-project --upgrade
+    pip install perfect-pypi --upgrade
 
 
-(install without cache: pip install pypi-project --no-cache-dir  )
+(install without cache: pip install perfect-pypi --no-cache-dir  )
 
 
-You can find the detailed documentation in https://github.com/leecampbellc85/pypi-project.
+You can find the detailed documentation in https://github.com/leecampbellc85/perfect-pypi.
 
 
 Usage
@@ -42,31 +42,31 @@ From command line
 **********************
 
 * Usage:
-    * pypr --version
-    * pypr core --input TEXT
-    * pypr core -i TEXT -o string
-    * pypr core -i TEXT --output json
+    * pfpy --version
+    * pfpy core --input TEXT
+    * pfpy core -i TEXT -o string
+    * pfpy core -i TEXT --output json
 * Arguments:
 * Options:
-    * **-h** **--help**            show this help message and exit
+    * **-h** **--help**        show this help message and exit
     * **-v --version**         show version and exit
     * **--verbose**            print status messages
     * **-i --input**           set input and exit
     * **-o --output**          output format default is string. Possible values: string, json
 
-You merely type the **pypr** command to commandline with the required parameters.
-* *pypr --version* or *pypr -v* : Get version of our package
-* *pypr core --input TEXT * or *pypr core -i TEXT -o string* : Write out to screen the TEXT in string format. (module: core)
-* ``` pypr core -i TEXT --output json ``` : Write out to screen the TEXT in json format. (module: core)
+You merely type the **pfpy** command to commandline with the required parameters.
+* *pfpy --version* or *pfpy -v* : Get version of our package
+* *pfpy core --input TEXT * or *pfpy core -i TEXT -o string* : Write out to screen the TEXT in string format. (module: core)
+* ``` pfpy core -i TEXT --output json ``` : Write out to screen the TEXT in json format. (module: core)
 
 From Python
 *************************
 
-Import the required module from pypiproject package in python
+Import the required module from perfectpypi package in python
 
 .. code-block::
 
-    import pypiproject
+    import perfectpypi
 
 
 Examples
@@ -80,7 +80,7 @@ From command line
 
 .. code-block::
 
-    pypr -v
+    pfpy -v
 
 
 Result: 
@@ -95,7 +95,7 @@ Result:
 
 .. code-block::
 
-    pypr core -i "Hello World"
+    pfpy core -i "Hello World"
 
 Result: 
 
@@ -110,7 +110,7 @@ Result:
 
 .. code-block::
     
-    pypr core -i "Hello World" -o json
+    pfpy core -i "Hello World" -o json
 
 
 Result: 
@@ -131,7 +131,7 @@ Every example assumes you are in python shell
 
 .. code-block::
 
-    from pypiproject.core.pypiproject_core_unittest import *
+    from perfectpypi.core.perfectpypi_core_unittest import *
     testResult = runUnittests()
 
 
@@ -139,9 +139,9 @@ Result:
 
 .. code-block::
 
-    test_input (pypiproject.core.pypiproject_core_unittest.TestCoreModule) ... All tests passed so far!
+    test_input (perfectpypi.core.perfectpypi_core_unittest.TestCoreModule) ... All tests passed so far!
     ok
-    test_output (pypiproject.core.pypiproject_core_unittest.TestCoreModule) ... All tests passed so far!
+    test_output (perfectpypi.core.perfectpypi_core_unittest.TestCoreModule) ... All tests passed so far!
     ok
 
     ----------------------------------------------------------------------
@@ -155,7 +155,7 @@ Result:
 
 .. code-block::
 
-    from pypiproject.core.pypiproject_core import *
+    from perfectpypi.core.perfectpypi_core import *
     getText("Hello World")
 
 
@@ -172,7 +172,7 @@ Result:
 
 .. code-block::
 
-    from pypiproject.core.pypiproject_core import *
+    from perfectpypi.core.perfectpypi_core import *
     getText("Hello World", "json")
 
 Result: 
@@ -187,38 +187,38 @@ Known issues
 #############
 
 
-**Permission denied on /usr/bin/pypr**
+**Permission denied on /usr/bin/pfpy**
 *******************************************
 
-Sometimes you are facing the following issue when you execute the **pypr** command:
+Sometimes you are facing the following issue when you execute the **pfpy** command:
 
 .. code-block::
     
-    -bash: /usr/bin/pypr: Permission denied
+    -bash: /usr/bin/pfpy: Permission denied
 
 
 Solution to execute the following command:
 
 .. code-block::
 
-    sudo chmod +x /usr/bin/pypr
+    sudo chmod +x /usr/bin/pfpy
 
 
-**Command not found on /usr/bin/pypr**
+**Command not found on /usr/bin/pfpy**
 *******************************************
-Although the package is well prepared sometimes you are facing the following issue after a package update when you execute the **pypr** command:
+Although the package is well prepared sometimes you are facing the following issue after a package update when you execute the **pfpy** command:
 
 .. code-block::
 
-    /usr/bin/pypr: line 2: $'\r': command not found
-    /usr/bin/pypr: line 19: syntax error: unexpected end of file
+    /usr/bin/pfpy: line 2: $'\r': command not found
+    /usr/bin/pfpy: line 19: syntax error: unexpected end of file
 
 
 Solution to execute the following command:
 
 .. code-block::
 
-    sudo dos2unix /usr/bin/pypr
+    sudo dos2unix /usr/bin/pfpy
 
 
 
