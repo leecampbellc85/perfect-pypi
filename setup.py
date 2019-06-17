@@ -30,9 +30,9 @@ sys.stdout.write("perfect-pypi: " + __version__ + '\n')
 
 setup(name='perfect-pypi',
 	scripts=[
-        'pypr',
-        'pypr.completion.sh',
-        'pypr.bat',
+        'pfpy',
+        'pfpy.completion.sh',
+        'pfpy.bat',
     ],
 	python_requires='>=2.6, <3',
     version=__version__,
